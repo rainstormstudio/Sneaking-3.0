@@ -3,10 +3,10 @@
 #include <string>
 
 class Level{
-public:
+private:
     sf::Texture map_texture;
     sf::Sprite level;
-
+public:
     Level();
     ~Level();
     void load_level(std::string path);

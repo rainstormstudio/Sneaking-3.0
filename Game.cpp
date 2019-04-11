@@ -14,7 +14,9 @@ Game::Game(){
     input = new Input();
 
     scene = new Level();
-    scene->load_level("Levels/forestmap.png");
+    scene->load_level("levels/forestmap.png");
+
+    player = new Player("sprites/solidsnake.gif", 400, 300, 40);
 
     bool main_loop = true;
     while (main_loop && gfx->window->isOpen()){
@@ -25,7 +27,7 @@ Game::Game(){
         }
 
         sf::Time time = clock->getElapsedTime();
-        double delta = clock->restart().asMicroseconds();
+        double delta = clock->restart().asSeconds();
 
         update(delta);
         render(delta);
@@ -36,14 +38,16 @@ Game::~Game(){}
 
 void Game::update(double delta){
     input->update();
+    player->move(scene, input, delta);
 }
 
 void Game::render(double delta){
     gfx->clear();
     scene->draw(gfx);
+    player->draw(gfx);
 
     if (show_FPS){
-        gfx->drawText("FPS " + std::to_string(1e6f / delta), sf::Color::White, 16, "font/arial.ttf", 5, 5);
+        gfx->drawText("FPS " + std::to_string(1e6f / (delta*1e6f)), sf::Color::White, 16, "font/arial.ttf", 5, 5);
     }
     gfx->render();
 }

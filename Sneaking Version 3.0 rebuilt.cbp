@@ -45,9 +45,13 @@
 		<Unit filename="Input.h" />
 		<Unit filename="Level.cpp" />
 		<Unit filename="Level.h" />
-		<Unit filename="Levels/forestmap.png" />
 		<Unit filename="Main.cpp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
 		<Unit filename="font/arial.ttf" />
+		<Unit filename="levels/forestmap.png" />
+		<Unit filename="sprites/metalgearsolid.png" />
+		<Unit filename="sprites/solidsnake.gif" />
 		<Extensions>
 			<code_completion />
 			<debugger />
