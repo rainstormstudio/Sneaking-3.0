@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1554734414 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Game.cpp
+	"Game.h"
+	<iostream>
+
+1554735582 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Game.h
+	"Graphics.h"
+	"Input.h"
+
+1554735565 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Graphics.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+
+1554735572 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Input.h
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Joystick.hpp>
+
+1554735058 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Graphics.cpp
+	"Graphics.h"
+
+1554735420 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Input.cpp
+	"Input.h"
+
+1554733877 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Main.cpp
+	"Game.h"
+
+1554734414 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.cpp
+	"Game.h"
+	<iostream>
+
+1554735582 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.h
+	"Graphics.h"
+	"Input.h"
+
+1554735565 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Graphics.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+
+1554735572 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Input.h
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Joystick.hpp>
+
+1554735058 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Graphics.cpp
+	"Graphics.h"
+
+1554735420 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Input.cpp
+	"Input.h"
+
+1554733877 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Main.cpp
+	"Game.h"
+
