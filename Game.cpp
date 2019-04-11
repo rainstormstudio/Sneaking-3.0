@@ -13,6 +13,9 @@ Game::Game(){
     clock = new sf::Clock();
     input = new Input();
 
+    scene = new Level();
+    scene->load_level("Levels/forestmap.png");
+
     bool main_loop = true;
     while (main_loop && gfx->window->isOpen()){
         sf::Event event;
@@ -37,6 +40,7 @@ void Game::update(double delta){
 
 void Game::render(double delta){
     gfx->clear();
+    scene->draw(gfx);
 
     if (show_FPS){
         gfx->drawText("FPS " + std::to_string(1e6f / delta), sf::Color::White, 16, "font/arial.ttf", 5, 5);

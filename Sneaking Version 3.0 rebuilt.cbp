@@ -43,6 +43,9 @@
 		<Unit filename="Graphics.h" />
 		<Unit filename="Input.cpp" />
 		<Unit filename="Input.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.h" />
+		<Unit filename="Levels/forestmap.png" />
 		<Unit filename="Main.cpp" />
 		<Unit filename="font/arial.ttf" />
 		<Extensions>

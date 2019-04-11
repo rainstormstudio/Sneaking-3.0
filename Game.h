@@ -1,6 +1,7 @@
 #pragma once
 #include "Graphics.h"
 #include "Input.h"
+#include "Level.h"
 
 class Game{
 private:
@@ -11,6 +12,8 @@ private:
     Graphics* gfx;
     Input* input;
     sf::Clock* clock;
+
+    Level* scene;
 
     bool show_FPS;
 
