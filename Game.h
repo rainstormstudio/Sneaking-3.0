@@ -2,7 +2,6 @@
 #include "Graphics.h"
 #include "Input.h"
 #include "Level.h"
-#include "Player.h"
 
 class Game{
 private:
@@ -15,7 +14,6 @@ private:
     sf::Clock* clock;
 
     Level* scene;
-    Player* player;
 
     bool show_FPS;
 
