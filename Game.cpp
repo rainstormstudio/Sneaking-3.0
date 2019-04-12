@@ -13,8 +13,8 @@ Game::Game(){
     clock = new sf::Clock();
     input = new Input();
 
-    scene = new Level(screen_width, screen_height, 0, 0);
-    scene->load_level("levels/forestmap.png", 1120, 1440);
+    scene = new Level();
+    scene->load_level("levels/forestmap.png");
 
     player = new Player("sprites/solidsnake.gif", 400, 300, 40);
 
@@ -39,7 +39,6 @@ Game::~Game(){}
 void Game::update(double delta){
     input->update();
     player->move(scene, input, delta);
-    scene->update_projector(player, delta);
 }
 
 void Game::render(double delta){

@@ -1,33 +1,15 @@
 #include "Level.h"
 
-Level::Level(int initWidth, int initHeight, int initX, int initY){
-    screen_width = initWidth;
-    screen_height = initHeight;
-    posX = initX;
-    posY = initY;
-}
+Level::Level(){}
 
 Level::~Level(){}
 
-void Level::load_level(std::string path, int initWidth, int initHeight){
-    level_width = initWidth;
-    level_height = initHeight;
+void Level::load_level(std::string path){
     if (!map_texture.loadFromFile(path))
         std::cout << "the level texture is failed to load\n";
-    projector.setTexture(map_texture);
-    sf::IntRect rect(posX, posY, screen_width, screen_height);
-    projector.setTextureRect(rect);
-}
-
-void Level::update_projector(Player* player, double deltatime){
-    if (player->posX - posX >= 0.75 * screen_width)
-        posX += player->posX - posX - 0.75 * screen_width;
-    if (player->posX - posX <= 0.25 * screen_width)
-        posX += player->posX - posX - 0.25 * screen_width;
-    if (posX < 0) posX = 0;
-    if (posX > level_width - screen_width) posX = level_width - screen_width;
+    level.setTexture(map_texture);
 }
 
 void Level::draw(Graphics* gfx){
-    gfx->window->draw(projector);
+    gfx->window->draw(level);
 }
