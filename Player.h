@@ -1,7 +1,7 @@
 #pragma once
+#include "Level.h"
 #include "Input.h"
 #include "Graphics.h"
-#include "Level.h"
 
 class Player{
 private:

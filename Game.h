@@ -1,8 +1,8 @@
 #pragma once
 #include "Graphics.h"
 #include "Input.h"
-#include "Level.h"
 #include "Player.h"
+#include "Level.h"
 
 class Game{
 private:
