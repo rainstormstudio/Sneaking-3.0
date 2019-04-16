@@ -47,6 +47,9 @@
 		<Unit filename="Level.h" />
 		<Unit filename="Levels/forestmap.png" />
 		<Unit filename="Main.cpp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="Sprites/metalgearsolid.gif" />
 		<Unit filename="font/arial.ttf" />
 		<Extensions>
 			<code_completion />

@@ -25,14 +25,23 @@
 1554733877 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Main.cpp
 	"Game.h"
 
-1554734414 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.cpp
+1555439082 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.cpp
 	"Game.h"
 	<iostream>
 
-1554997441 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.h
+1554997441 ated upstream
+
+1555439090 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Game.h
 	"Graphics.h"
 	"Input.h"
 	"Level.h"
+	"Player.h"
+
+1555019155 
+
+1555203317 shed changes
+	"Graphics.h"
+	<string>
 
 1554735565 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Graphics.h
 	<SFML/Graphics.hpp>
@@ -52,10 +61,19 @@
 1554733877 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Main.cpp
 	"Game.h"
 
-1554996949 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Level.cpp
+1555437614 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Level.cpp
 	"Level.h"
 
-1554997441 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Level.h
+1555437522 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Level.h
 	"Graphics.h"
 	<string>
+
+1555439082 /home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Player.h
+	"Input.h"
+	"Graphics.h"
+	"Level.h"
+	<string>
+
+1555440212 source:/home/daniel/Documents/workplace/Sneaking Version 3.0 rebuilt/Sneaking 3.0/Player.cpp
+	"Player.h"
 
