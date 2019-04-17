@@ -39,6 +39,7 @@ Game::~Game(){}
 void Game::update(double delta){
     input->update();
     player->move(scene, input, delta);
+    scene->update_projector(player->posX, player->posY);
 }
 
 void Game::render(double delta){

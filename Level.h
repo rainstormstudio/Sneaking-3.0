@@ -15,5 +15,6 @@ public:
     Level(int initWidth, int initHeight, int initX, int initY);
     ~Level();
     void load_level(std::string path, int initWidth, int initHeight);
+    void update_projector(float playerX, float playerY);
     void draw(Graphics* gfx);
 };

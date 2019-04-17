@@ -19,6 +19,21 @@ void Level::load_level(std::string path, int initWidth, int initHeight){
     projector.setTextureRect(rect);
 }
 
+void Level::update_projector(float playerX, float playerY){
+    if (playerX - posX >= screen_width * 0.75)
+        posX += playerX - posX - screen_width * 0.75;
+    if (playerX - posX <= screen_width * 0.25)
+        posX += playerX - posX - screen_width * 0.25;
+    if (playerY - posY >= screen_height * 0.75)
+        posY += playerY - posY - screen_height * 0.75;
+    if (playerY - posY <= screen_height * 0.25)
+        posY += playerY - posY - screen_height * 0.25;
+    sf::IntRect rect(posX, posY, screen_width, screen_height);
+    projector.setTextureRect(rect);
+}
+
 void Level::draw(Graphics* gfx){
+    sf::IntRect rect(posX, posY, screen_width, screen_height);
+    projector.setTextureRect(rect);
     gfx->window->draw(projector);
 }
